@@ -7,9 +7,9 @@ import org.springframework.context.annotation.ImportResource;
 
 @ImportResource({"classpath*:rpc-sofaboot-starter.xml"})
 @SpringBootApplication
-public class ApplicationBoot {
+public class ProducerApplicationBoot {
     public static void main(String[] args) {
-        SpringApplication springApplication = new SpringApplication(ApplicationBoot.class);
+        SpringApplication springApplication = new SpringApplication(ProducerApplicationBoot.class);
         ApplicationContext applicationContext = springApplication.run(args);
     }
 }
